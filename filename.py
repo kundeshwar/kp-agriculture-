@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import pickle
 from streamlit_lottie import st_lottie
+import requests
 #------------------------------------------------------
 
 with st.sidebar:
