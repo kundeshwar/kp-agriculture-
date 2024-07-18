@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pickle
-
+from streamlit_lottie import st_lottie
 #------------------------------------------------------
 
 with st.sidebar:
@@ -36,7 +36,7 @@ Area_Encoder = {
     'Lithuania': 55, 'Madagascar': 56, 'Malawi': 57, 'Malaysia': 58, 'Mali': 59, 'Mauritania': 60, 'Mauritius': 61, 'Mexico': 62,
     'Mex': 63
 }
-
+loettir_2 = lottie("https://assets2.lottiefiles.com/packages/lf20_qavaymcn.json")
 Item_Encoder = {
     'Maize': 0, 'Potatoes': 1, 'Rice, paddy': 2, 'Sorghum': 3, 'Soybeans': 4, 'Wheat': 5, 'Cassava': 6, 'Sweet potatoes': 7,
     'Plantains and others': 8, 'Yams': 9
@@ -61,7 +61,7 @@ st.title("Crop Yield Prediction")
 st.write("""
 ## Input the following features to predict the crop yield:
 """)
-
+st_lottie(loettie_1)
 Year = st.number_input("Year", min_value=1900, max_value=2100, value=2020)
 average_rain_fall_mm_per_year = st.number_input("Average Rainfall (mm per year)", min_value=0.0, value=1000.0)
 pesticides_tonnes = st.number_input("Pesticides (tonnes)", min_value=0.0, value=100.0)
