@@ -21,7 +21,7 @@ with st.sidebar:
 #-------------------------------------------------------
 
 # Load the trained model
-with open('dtr(1).pkl', 'rb') as file:
+with open('dtr (1).pkl', 'rb') as file:
     dtr = pickle.load(file)
 
 # Define the encoders
