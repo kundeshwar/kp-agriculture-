@@ -66,7 +66,7 @@ st.title("Crop Yield Prediction")
 st.write("""
 ## Input the following features to predict the crop yield:
 """)
-st_lottie(loettie_1)
+st_lottie(loettie_2)
 Year = st.number_input("Year", min_value=1900, max_value=2100, value=2020)
 average_rain_fall_mm_per_year = st.number_input("Average Rainfall (mm per year)", min_value=0.0, value=1000.0)
 pesticides_tonnes = st.number_input("Pesticides (tonnes)", min_value=0.0, value=100.0)
