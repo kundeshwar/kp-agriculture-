@@ -23,7 +23,11 @@ with st.sidebar:
 # Load the trained model
 with open('dtr (1).pkl', 'rb') as file:
     dtr = pickle.load(file)
-
+def lottie(url):
+    r = requests.get(url)
+    if r.status_code !=200:
+        return None
+    return r.json()
 # Define the encoders
 Area_Encoder = {
     'Albania': 0, 'Algeria': 1, 'Angola': 2, 'Argentina': 3, 'Armenia': 4, 'Australia': 5, 'Austria': 6, 'Azerbaijan': 7,
